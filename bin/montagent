@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Montagent CLI launcher — runs the TS entrypoint via tsx (dev) without a build step.
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+exec "$DIR/node_modules/.bin/tsx" "$DIR/src/cli/index.ts" "$@"

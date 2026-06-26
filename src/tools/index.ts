@@ -84,6 +84,7 @@ import { TTSSelector } from "./tts/tts_selector.js";
 
 // video (generation + post)
 import { AutoReframe } from "./video/auto_reframe.js";
+import { DoubaoSeedanceVideo } from "./video/doubao_seedance_video.js";
 import { GreenScreenComposite } from "./video/green_screen_composite.js";
 import { GreenScreenProcessor } from "./video/green_screen_processor.js";
 import { GrokVideo } from "./video/grok_video.js";
@@ -172,6 +173,7 @@ export const ALL_TOOLS: Array<new () => BaseTool> = [
   TTSSelector,
   // video (generation + post)
   AutoReframe,
+  DoubaoSeedanceVideo,
   GreenScreenComposite,
   GreenScreenProcessor,
   GrokVideo,
